@@ -9,7 +9,7 @@ export default function About() {
           <h2 className='text-4xl text-center m-4'>About</h2>
 
           <p className='text-justify mb-4'>
-            Bean Lorem ipsum dolor sit amet, ut usu altera copiosae, ad possim
+            Beans Lorem ipsum dolor sit amet, ut usu altera copiosae, ad possim
             quaestio per. Ferri equidem dolorem quo et. Eum noster audire
             aliquid ei, his ex primis pertinacia, ut nibh doming vis. Tantas
             laoreet sea at, movet exerci inermis eu his. Sit in debet accumsan
