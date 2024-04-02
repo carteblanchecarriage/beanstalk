@@ -32,7 +32,7 @@ export default function Home({ posts }) {
       <div className='flex flex-col justify-between items-center align-middle'>
         <div className='mb-6'>
           {sortedPosts.map((post, index) => (
-            <div>
+            <div key={index}>
               <Link href={`/posts/${post.slug}`} className='group'>
                 <div className='card rounded-none w-96 h-72 bg-base-100 hover:shadow-offset-black m-2 border-2 border-black'>
                   <figure>
