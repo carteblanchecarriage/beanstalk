@@ -36,16 +36,18 @@ export default function Home({ posts }) {
               <Link href={`/posts/${post.slug}`} className='group'>
                 <div className='card rounded-none w-96 h-72 bg-base-100 hover:shadow-offset-black m-2 border-2 border-black'>
                   <figure>
-                    {/* <Image
-                        src={post.photo.url}
-                        width={post.photo.width}
-                        height={post.photo.height}
-                        alt='cool image'
-                        className='h-[200px] w-full object-cover'
-                      /> */}
+                    <Image
+                      src={post.featureImage.url}
+                      width={post.featureImage.width}
+                      height={post.featureImage.height}
+                      alt='cool image'
+                      className='h-[200px] w-full object-cover'
+                    />
                   </figure>
                   <div className='card-body'>
                     <h2 className='card-title'>{post.postTitle}</h2>
+                    <p className='h-16 overflow-hidden'>{post.postPreview}</p>
+                    <h3 className='mt-4'>{post.createdAt}</h3>
                   </div>
                 </div>
               </Link>

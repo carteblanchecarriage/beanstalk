@@ -13,6 +13,7 @@ export async function getPosts() {
             html
           }
           slug
+          postPreview
           featureImage {
             height
             width
