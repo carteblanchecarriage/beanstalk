@@ -4,23 +4,24 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
-  const [copied, setCopied] = useState(false);
-
   const router = useRouter();
 
   return (
     <>
-      <div className='flex bg-blue-200 mb-4'>
-        <div className='flex mx-auto'>
+      <div className='flex bg-blue-200 mb-4 p-4'>
+        <div className='flex gap-4 mx-auto'>
           <Link
             href='/'
-            className='p-6 text-center text-black font-bold text-4xl '
+            className='text-center text-black font-bold text-4xl flex items-center'
           >
-            <h1>Beanstalk</h1>
+            Beanstalk
           </Link>
 
-          <Link href='/about'>
-            <h1>About</h1>
+          <Link
+            href='/about'
+            className='hover:text-blue-400 text-center text-xl flex items-center'
+          >
+            About
           </Link>
         </div>
       </div>

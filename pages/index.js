@@ -34,7 +34,7 @@ export default function Home({ posts }) {
           {sortedPosts.map((post, index) => (
             <div key={index}>
               <Link href={`/posts/${post.slug}`} className='group'>
-                <div className='card rounded-none w-96 h-72 bg-base-100 hover:shadow-offset-black m-2 border-2 border-black'>
+                <div className='card rounded-none w-3/5 h-72 m-2 bg-gray-50 hover:bg-gray-100 mx-auto'>
                   <figure>
                     <Image
                       src={post.featureImage.url}
@@ -47,7 +47,14 @@ export default function Home({ posts }) {
                   <div className='card-body'>
                     <h2 className='card-title'>{post.postTitle}</h2>
                     <p className='h-16 overflow-hidden'>{post.postPreview}</p>
-                    <h3 className='mt-4'>{post.createdAt}</h3>
+
+                    <p>
+                      {new Date(post.createdAt).toLocaleString('en-US', {
+                        month: 'long',
+                        day: '2-digit',
+                        year: 'numeric',
+                      })}
+                    </p>
                   </div>
                 </div>
               </Link>
