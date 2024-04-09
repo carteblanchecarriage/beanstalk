@@ -31,7 +31,7 @@ export default function Post({ post }) {
 
   return (
     <>
-      <div className='mx-24'>
+      <div className='lg:w-3/5 mx-auto p-6 sm:w-full'>
         <Markdown
           components={{
             p: ({ children }) => <p className='mb-4'>{children}</p>,
