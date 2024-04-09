@@ -35,15 +35,24 @@ export default function Post({ post }) {
         <Markdown
           components={{
             p: ({ children }) => <p className='mb-4'>{children}</p>,
+            h1: ({ children }) => (
+              <h1 className='font-bold text-2xl mb-4'>{children}</h1>
+            ),
+            h2: ({ children }) => (
+              <h2 className='font-bold text-xl mb-4'>{children}</h2>
+            ),
             img: ({ node, ...props }) => {
               const { src, alt } = props;
               return (
-                <Image
-                  src={src}
-                  alt={alt}
-                  width={500} // Adjust width and height as needed
-                  height={500}
-                />
+                <div className='flex justify-center'>
+                  {' '}
+                  <Image
+                    src={src}
+                    alt={alt}
+                    width={500} // Adjust width and height as needed
+                    height={500}
+                  />
+                </div>
               );
             },
           }}

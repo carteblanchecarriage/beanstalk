@@ -8,10 +8,10 @@ const Footer = () => {
 
   return (
     <>
-      <footer className='footer footer-center p-10 bg-base-200 text-base-content rounded mt-12'>
+      <footer className='footer footer-center p-10 bg-blue-200 text-base-content rounded mt-12'>
         <div>
           <p>
-            <Link href='/'>Blog</Link>
+            <Link href='/'>beanstalk</Link>
           </p>
         </div>
       </footer>
