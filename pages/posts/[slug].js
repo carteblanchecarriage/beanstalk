@@ -25,10 +25,6 @@ export default function Post({ post }) {
     }
   };
 
-  console.log(post.postTitle);
-
-  console.log(post.postContent.markdown);
-
   return (
     <>
       <div className='lg:w-3/5 mx-auto p-6 sm:w-full'>

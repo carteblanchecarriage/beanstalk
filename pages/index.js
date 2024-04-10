@@ -29,12 +29,12 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <div className='flex flex-col justify-between items-center align-middle'>
+      <div className='flex flex-col justify-between items-center align-middle lg:w-3/4 sm:w-full max-w-3xl mx-auto py-4'>
         <div className='mb-6'>
           {sortedPosts.map((post, index) => (
             <div key={index}>
               <Link href={`/posts/${post.slug}`} className='group'>
-                <div className='card rounded-none w-3/5 h-72 m-6 bg-gray-50 hover:bg-gray-100 mx-auto'>
+                <div className='card rounded-none h-72 m-6 bg-gray-50 hover:bg-gray-100 mx-auto'>
                   <figure>
                     <Image
                       src={post.featureImage.url}

@@ -21,12 +21,6 @@ const Navbar = () => {
           className='absolute h-1/4 w-1/2 text-center text-black font-bold text-4xl flex items-center'
         ></Link>
       </div>
-      <Link
-        href='/about'
-        className='hover:text-blue-400 text-center text-xl flex items-center fixed right-10 top-10'
-      >
-        About
-      </Link>
     </>
   );
 };
