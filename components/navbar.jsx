@@ -14,7 +14,7 @@ const Navbar = () => {
           width='2379'
           height='876'
           alt='banner'
-          className='w-full h-[150px] mx-auto object-cover'
+          className='sm:w-full lg:w-3/4 h-[150px] mx-auto object-cover object-[10%]'
         />
         <Link
           href='/'

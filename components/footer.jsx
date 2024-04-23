@@ -8,9 +8,9 @@ const Footer = () => {
 
   return (
     <>
-      <footer className='flex items-center justify-center h-24 bg-blue-200 mt-8'>
+      <footer className='flex items-center justify-center h-24 bg-primaryColor mt-8'>
         <div>
-          <Link href='/about' className='text-white hover:text-blue-400'>
+          <Link href='/about' className='text-white hover:font-bold'>
             About
           </Link>
         </div>
