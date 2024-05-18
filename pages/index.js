@@ -34,17 +34,15 @@ export default function Home({ posts }) {
           {sortedPosts.map((post, index) => (
             <div key={index}>
               <Link href={`/posts/${post.slug}`} className='group'>
-                <div className='card rounded-none h-72 m-6 bg-gray-50 hover:bg-gray-100 mx-auto'>
-                  <figure>
+                <div className='card rounded-none h-96 m-6 bg-gray-50 hover:bg-gray-100 mx-auto'>
+                  <div className='card-body'>
                     <Image
                       src={post.featureImage.url}
                       width={post.featureImage.width}
                       height={post.featureImage.height}
                       alt='cool image'
-                      className='h-[200px] w-full object-cover'
+                      className='h-[200px] w-[200px] object-cover'
                     />
-                  </figure>
-                  <div className='card-body'>
                     <h2 className='card-title'>{post.postTitle}</h2>
                     <p className='h-16 overflow-hidden'>{post.postPreview}</p>
 
