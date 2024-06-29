@@ -42,7 +42,7 @@ export default function Post({ post }) {
   useEffect(() => {
     fetchComments();
     console.log(allComments);
-  }, [allComments]);
+  }, []);
 
   const generateRandomColor = () => {
     const randomColor = Math.floor(Math.random() * 0xffffff).toString(16);
