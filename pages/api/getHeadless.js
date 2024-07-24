@@ -5,7 +5,7 @@ export async function getPosts() {
   const { data } = await client.query({
     query: gql`
       query Posts {
-        posts {
+        posts(last: 20) {
           postTitle
           createdAt
           postContent {
